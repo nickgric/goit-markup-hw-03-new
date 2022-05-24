@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio — главная</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <header>
-        <a class="header-logo" href="./index.html"><span class="header-logo-accent">Web</span>Studio</a>
-        <nav>
-            <ul class="header-nav">
-                <li><a class="header-nav-link header-nav-link-active" href="./index.html">Студия</a></li>
-                <li><a class="header-nav-link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="header-nav-link" href="./contacts.html">Контакты</a></li>
+        <div class="container header">
+            <a class="header-logo" href="./index.html"><span class="header-logo-accent">Web</span>Studio</a>
+            <nav>
+                <ul class="header-nav">
+                    <li class="header-nav-item"><a class="header-nav-link header-nav-link-active" href="./index.html">Студия</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="./contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="header-contacts">
+                <li class="header-contacts-item"><a class="header-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="header-contacts-item"><a class="header-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="header-contacts">
-            <li><a class="header-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
-            <button class="hero-button" type="button">Заказать услугу</button>
+            <div class="container">
+                <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
+                <button class="hero-button" type="button">Заказать услугу</button>
+            </div>
         </section>
         <section class="skills">
-            <h2 class="hidden">Наши преимущества</h2>
-            <ul class="skills-list">
-                <li>
-                    <h3 class="skills-list-title">Внимание к деталям</h3>
-                    <p class="skills-list-about">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li>
-                    <h3 class="skills-list-title">Пунктуальность</h3>
-                    <p class="skills-list-about">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li>
-                    <h3 class="skills-list-title">Планирование</h3>
-                    <p class="skills-list-about">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li>
-                    <h3 class="skills-list-title">Современные технологии</h3>
-                    <p class="skills-list-about">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="hidden">Наши преимущества</h2>
+                <ul  class="skills-list">
+                    <li class="skills-list-item">
+                        <h3 class="skills-list-title">Внимание к деталям</h3>
+                        <p class="skills-list-about">Идейные соображения, а также начало повседневной работы по
+                            формированию позиции.</p>
+                    </li>
+                    <li class="skills-list-item">
+                        <h3 class="skills-list-title">Пунктуальность</h3>
+                        <p class="skills-list-about">Задача организации, в особенности же рамки и место обучения кадров
+                            влечет за собой.</p>
+                    </li>
+                    <li class="skills-list-item">
+                        <h3 class="skills-list-title">Планирование</h3>
+                        <p class="skills-list-about">Равным образом консультация с широким активом в значительной
+                            степени обуславливает.</p>
+                    </li>
+                    <li class="skills-list-item">
+                        <h3 class="skills-list-title">Современные технологии</h3>
+                        <p class="skills-list-about">Значимость этих проблем настолько очевидна, что реализация плановых
+                            заданий.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="whatwedo">
-            <h2 class="whatwedo-title">Чем мы занимаемся</h2>
-            <ul class="whatwedo-list">
-                <li><img src="./images/whatwedo-1.jpg" alt="Разработка десктопного софта" width="370" height="294"></li>
-                <li><img src="./images/whatwedo-2.jpg" alt="Создание мобильных приложений" width="370" height="294"></li>
-                <li><img src="./images/whatwedo-3.jpg" alt="Внедрение дизайнерских решений" width="370" height="294"></li>
-            </ul>
+            <div class="container">
+                <h2 class="whatwedo-title">Чем мы занимаемся</h2>
+                <ul class="whatwedo-list">
+                    <li class="whatwedo-list-item"><img src="./images/whatwedo-1.jpg" alt="Разработка десктопного софта" width="370" height="294">
+                    </li>
+                    <li class="whatwedo-list-item"><img src="./images/whatwedo-2.jpg" alt="Создание мобильных приложений" width="370" height="294">
+                    </li>
+                    <li class="whatwedo-list-item"><img src="./images/whatwedo-3.jpg" alt="Внедрение дизайнерских решений" width="370"
+                            height="294">
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="team">
-            <h2 class="team-title">Наша команда</h2>
+            <div class="container">
+                <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list-item">
                         <img src="./images/ourteam-1.jpg" alt="Улыбающийся брюнет в очках" width="270" height="260">
@@ -92,17 +113,22 @@
                         </div>
                     </li>
                 </ul>
+            </div>
         </section>
     </main>
     <footer>
-        <a class="footer-logo" href="./index.html"><span class="footer-logo-accent">Web</span>Studio</a>
-        <address>
-            <ul class="address-list">
-                <li class="address-list-item"><a  href="https://goo.gl/maps/EVga5YoT9mMp64XXA" target="_blank" rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li class="address-list-item"><a  href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="address-list-item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <a class="footer-logo" href="./index.html"><span class="footer-logo-accent">Web</span>Studio</a>
+            <address>
+                <ul class="address-list">
+                    <li class="address-list-item"><a href="https://goo.gl/maps/EVga5YoT9mMp64XXA" target="_blank"
+                            rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="address-list-item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="address-list-item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
+
 </html>
