@@ -1,0 +1,371 @@
+:root {
+    --color-main: #212121;
+    --color-accent: #2196F3;
+    --color-secondary: #757575;
+    --color-invert: white;
+
+    --color-footer-address: rgba(255, 255, 255, 0.6);
+
+    --background-color-dark: #2F303A;
+    --background-color-light: #F5F4FA;
+
+    --font-main: 'Roboto';
+    --font-logo: 'Raleway';
+}
+
+
+/* basic - start */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--color-main);
+    font-family: var(--font-main);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    font: inherit;
+}
+
+address {font-style: normal;}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* basic - end */
+
+
+/* header - start */
+
+.header-logo {
+    font-family: var(--font-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.header-logo-accent {
+    color: var(--color-accent);
+}
+
+.header-nav,
+.header-contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    display: flex;
+}
+
+.header-contacts {
+    color: var(--color-secondary);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-nav-link-active,
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+    color: var(--color-accent);
+}
+
+/* header - end */
+
+
+/* hero - start */
+
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: var(--background-color-dark);
+    color: var(--color-invert);
+}
+
+.hero-title {
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-button {
+    background-color: var(--color-accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--color-invert);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #188CE8;
+}
+
+/* hero - end */
+
+
+/* skills - start */
+
+.skills {
+    padding-top: 94px;
+}
+
+.skills-list {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    display: flex;
+}
+
+.skills-list-title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.skills-list-about {
+    color: var(--color-secondary);
+}
+
+/* skills - end */
+
+
+/* whatwedo - start */
+
+.whatwedo {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.whatwedo-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+}
+
+.whatwedo-list {
+    display: flex;
+}
+
+/* whatwedo - end */
+
+
+/* team - start */
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    background-color: var(--background-color-light);
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-list-item {
+    width: 270px;
+    height: 368px;
+    background: var(--color-invert);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-description-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-list-member {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-list-member-info {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-secondary);
+}
+
+/* team - end */
+
+
+/* projects - start */
+
+.projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.projects-filter {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.projects-filter-buttons {
+    padding: 6px 22px 6px 22px;
+
+    background: var(--background-color-light);
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.projects-filter-buttons:hover,
+.projects-filter-buttons:focus {
+    background: var(--color-accent);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    color: var(--color-invert);
+}
+
+.projects-list {
+    display: flex;
+}
+
+.projects-list-item {
+    background: var(--color-invert);
+    border: 1px solid #EEEEEE;
+
+    width: 370px;
+}
+
+.projects-list-title {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects-list-description-block {
+    padding: 20px 24px 20px 24px;
+}
+
+.projects-list-description {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--color-secondary);
+}
+
+/* projects - end */
+
+
+/* footer - start */
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-color-dark);
+    color: var(--color-invert);
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+
+    display: block;
+
+    font-family: var(--font-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.footer-logo-accent {
+    color: var(--color-accent);
+}
+
+.address-list {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.address-list-item:not(:first-child) {
+    color: var(--color-footer-address);
+}
+
+.address-list-item:hover,
+.address-list-item:focus {
+    text-decoration: underline;
+}
+
+/* footer - end */
